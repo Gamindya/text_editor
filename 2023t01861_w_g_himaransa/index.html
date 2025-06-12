@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button onclick="format('bold')"><b>B</b></button>
+        <button onclick="format('underline')"><u>U</u></button>
+        <button onclick="format('italic')"><i>I</i></button>
+        <input type="color" onchange="setColor(this.value)">
+        <button onclick="align('left')">Left</button>
+        <button onclick="align('center')">Center</button>
+        <button onclick="align('right')">Right</button>
+        <button onclick="align('justify')">Justify</button>
+        <button onclick="undo()">Undo</button>
+        <button onclick="redo()">Redo</button>
+    </div>
+    <div id="editor" contenteditable="true"></div>
+    <script src="script.js"></script>
+</body>
+</html>
